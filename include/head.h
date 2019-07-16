@@ -1,0 +1,31 @@
+#ifndef __HEAD_H__
+#define __HEAD_H__
+#include <sys/epoll.h>
+#include <netdb.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <pthread.h>
+#include <signal.h>
+#include <sys/msg.h>
+#include <sys/sem.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+#include <sys/wait.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <dirent.h>
+#include <string.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <time.h>
+#include <pwd.h>
+#include <grp.h>
+#include <sys/mman.h>
+#include <sys/select.h>
+#include <sys/time.h>
+#define args_check(a,b) {if(a!=b){printf("error args\n");return -1;}}
+#endif
